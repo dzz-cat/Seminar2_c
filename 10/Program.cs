@@ -15,8 +15,8 @@ Console.WriteLine("Введите трехзначное число:");
 	int Length = num.ToString().Length;
         if (Length == 3) 
             {
-                int num1 = ( num/10 ) % 10;
-                Console.WriteLine($"Вторая цифра введенного числа {num1}");
+                int num2 = (num % 100) / 10;
+                Console.WriteLine($"Вторая цифра введенного числа: {num2}");
             } 
         else 
             {
@@ -30,8 +30,8 @@ Console.WriteLine("Введите трехзначное число:");
 // 	int num = Convert.ToInt32(Console.ReadLine());
 // if (num > 99 && num < 1000)
 //     {
-//     int num1 = num / 10 % 10;
-//     Console.WriteLine($"вторая цифра - {num1}");
+//     int num2 = (num / 10) % 10; // второй вариант поиска второй цифры, но первый мне нравится больше
+//     Console.WriteLine($"вторая цифра - {num2}");
 //     }
 // else Console.WriteLine("Число не трехзначное, что странно.  Попробуйте еще раз =)  ");   
 
@@ -39,9 +39,10 @@ Console.WriteLine("Введите трехзначное число:");
 //   с использованием рандомайзера
 
 // int num = new Random().Next(99,1000);
+// Console.WriteLine("Сгенерированное число:");
 // Console.WriteLine(num);
-// int num1 = num / 10 % 10;;  
-// Console.WriteLine($"вторая цифра - {num1}");
+// int num2 = (num % 100) / 10; 
+// Console.WriteLine($"Вторая цифра - {num2}");
 
 
 //   и еще раз  с использованием рандомайзера и конструкции if/else
@@ -52,8 +53,8 @@ Console.WriteLine("Введите трехзначное число:");
 
 // if (num > 99 && num < 1000)
 //     {
-//     num1 = num / 10 % 10;
-//     Console.WriteLine($"вторая цифра - {num1}");
+//     int num2 = (num % 100) / 10;
+//     Console.WriteLine($"вторая цифра - {num2}");
 
 //     }
 // else Console.WriteLine("Число не трехзначное, что странно.");
